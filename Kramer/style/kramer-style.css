@@ -1,0 +1,462 @@
+﻿@import url(style/reset-style.css);
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Droid', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-item a:hover {
+    color: #313b45;
+    transition: 1s;
+}
+
+
+header .container {
+    display: flex;
+    padding: 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.menu-item {
+    padding: 5px 15px;
+}
+
+.menu-item a {
+    color: #FFF;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+        /*VIDEO*/
+
+.video {
+    height: 100vh;
+    background-color: #808080;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.sixteen-nine {
+    position: relative;
+}
+
+.sixteen-nine:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.sixteen-nine > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container-welcome {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 20%;
+    left: 20%;
+    margin: 0 auto;
+}
+
+.welcome-title {
+    font-size: 80px;
+    font-weight: 700;
+    max-width: 850px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 340px;
+}
+
+.v {
+    border: 1px solid #2ecc71;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 27px;
+    font-family: 'Droid sans';
+    text-transform: uppercase;
+}
+
+.v-title {
+    font-size: 27px;
+    color: #fff;
+    margin: 15px;
+}
+
+        /*ABOUT*/
+
+#about {
+    background-color: #34495e;
+    position: relative;
+}
+
+.container-about {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.block-about {
+    max-width: 780px;
+    margin-left: 185px;
+    margin-right: 190px;
+}
+
+#about .about-title {
+    padding: 125px 50px 0px;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+    color: #fff;
+}
+
+.about-text {
+    color: #fff;
+    padding: 65px 70px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.gear {
+    fill: #fff;
+    width: 95px;
+    height: 95px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.gear-title {
+    color: #fff;
+    text-align: center;
+}
+
+.retina {
+    fill: #fff;
+    width: 95px;
+    height: 95px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.support {
+    fill: #fff;
+    width: 95px;
+    height: 95px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.options {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.options-items {
+    max-width: 250px;
+    justify-content: space-around;
+}
+
+.options li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 55px;
+    margin-bottom: 110px;
+}
+
+.options h4, .options p {
+    color: #fff;
+}
+
+        /*PORTFOLIO*/
+
+#portfolio {
+    padding-bottom: 110px;
+}
+
+.container-portfolio {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 45px;
+    padding-top: 125px;
+}
+
+.portfolio-menu {
+    padding: 70px 100px;
+    text-align: center;
+}
+
+.portfolio-menu li {
+    display: inline;
+}
+
+.portfolio-menu a {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 30px;
+    color: #2c3e50;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.portfolio-menu a:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-gap: 30px;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.block-front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3d4f5e;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 0;
+    transition-duration: .8s;
+}
+
+.portfolio-item:hover .block-front {
+    opacity: .8;
+}
+
+.block-front h4, a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.block-front h4 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.block-front a {
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+/*TEAM*/
+
+#team {
+    background-color: #2980b9;
+    width: 100%;
+}
+
+.container-team {
+    max-width: 730px;
+    margin: 0 auto;
+    background-color: #2980b9;
+}
+
+.team-wraper {
+    margin: 0 20px;
+}
+
+.team-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.team-items {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.Cosmo, .George {
+    margin: 60px 20px 100px;
+    max-width: 300px;
+}
+
+.team-items img {
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.team-items a {
+    text-decoration: none;
+}
+
+.twitter  {
+    fill: #fff;
+    width: 39px;
+    height: 39px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.instagram {
+    fill: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.team-items h4, .team-items p {
+    color: #fff;
+}
+
+.team-items h4 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.team-items p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Droid', serif;
+}
+
+.team-items svg {
+    margin: 15px;
+}
+
+
+/*CONTACT*/
+
+#contact {
+    color: #2c3e50;
+}
+
+.contact-text {
+    color: #2c3e50;
+}
+
+.container-contact {
+    max-width: 725px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+label, textarea:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 370px;
+    background-color: #2ecc71;
+    margin: 10px;
+}
+
+.feedback fieldset {
+    width: 375px;
+    border: none;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #2c3e50;
+}
+
+.footer-address p {
+    text-align: center;
+    width: 165px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
