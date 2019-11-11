@@ -18,8 +18,8 @@ header {
 }
 
 .menu-item a:hover {
-    color: #313b45;
-    transition: 1s;
+    color: #313b45; /*Ну такой цвет мягко говоря не очень читабелен на большинстве секциях сайта*/
+    transition: 1s;/*1с это неоправдано много*/
 }
 
 
@@ -117,7 +117,7 @@ video {
     color: #fff;
     font-weight: 700;
     font-size: 27px;
-    font-family: 'Droid sans';
+    font-family: 'Droid sans';/*А где семейство?*/
     text-transform: uppercase;
 }
 
@@ -147,7 +147,7 @@ video {
 }
 
 #about .about-title {
-    padding: 125px 50px 0px;
+    padding: 125px 50px 0px; /*0 он всегда 0. Возле него единицы измерения не ставятся*/
     font-size: 45px;
     text-align: center;
     font-weight: 700;
@@ -209,11 +209,11 @@ video {
     list-style-type: none;
     text-align: center;
     margin: 0 55px;
-    margin-bottom: 110px;
+    margin-bottom: 110px; /*А в 1 строку чего не записать то?*/
 }
 
 .options h4, .options p {
-    color: #fff;
+    color: #fff;/*Вот чисто для меня - пиши большими буквами*/
 }
 
         /*PORTFOLIO*/
@@ -223,7 +223,7 @@ video {
 }
 
 .container-portfolio {
-    max-width: 1170px;
+    max-width: 1170px; /*Контейнер стоит 1 раз прописать и все*/
     width: 100%;
     margin: 0 auto;
 }
@@ -257,7 +257,7 @@ video {
 .portfolio-menu a:hover {
     background-color: #2ecc71;
     color: #fff;
-    padding: 12px 20px;
+    padding: 12px 20px; /*За счет того что меняешь паддинги - у тебя все едет при ховере*/
     border-radius: 20px;
     transition: .5s;
 }
@@ -345,7 +345,7 @@ video {
     padding: 0;
 }
 
-.Cosmo, .George {
+.Cosmo, .George { /*Нейминг классов всегда с маленькой буквы*/
     margin: 60px 20px 100px;
     max-width: 300px;
 }
@@ -389,7 +389,7 @@ video {
 .team-items p {
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Droid', serif;
+    font-family: 'Droid', serif;/*Почему бы не в 1 строку?**/
 }
 
 .team-items svg {
@@ -423,7 +423,7 @@ label, textarea:after {
 }
 
 .feedback fieldset {
-    width: 375px;
+    width: 375px; /*Точно ширина?*/
     border: none;
 }
 
